@@ -8,6 +8,7 @@ const AddTaskContainer = () => {
     const [category, setCategory] = useState('');
     const { addNewTask } = useTasks();
     const [isDone, setIsDone] = useState(false);
+    const [errorMessage, setErrorMessage] = useState('');   
 
     const handleAddTask = useCallback((event) => {
         event.preventDefault();
@@ -19,13 +20,16 @@ const AddTaskContainer = () => {
                 status: 'To Do',
                 isDone,
                 createdAt: new Date().toISOString(),
-                assigned: 'Unassigned' // Set to "Unassigned"
+                assigned: 'Unassigned' 
             };
             addNewTask(newTask);
             setTitle('');
             setDescription('');
             setCategory('');
             setIsDone(false);
+            setErrorMessage('');
+        } else {
+            setErrorMessage('Please fill in all fields');   
         }
     }, [title, description, category, isDone, addNewTask]);
 
@@ -40,6 +44,7 @@ const AddTaskContainer = () => {
             isDone={isDone}
             setIsDone={setIsDone}
             handleAddTask={handleAddTask}
+            errorMessage={errorMessage}
         />
     );
 };

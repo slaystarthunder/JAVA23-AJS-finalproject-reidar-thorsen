@@ -3,7 +3,7 @@ import TextField from './TextField';
 import Button from './Button';
 import '../../styles/AddTask.css';
 
-const AddTask = ({ title, setTitle, description, setDescription, category, setCategory, isDone, setIsDone, handleAddTask }) => {
+const AddTask = ({ title, setTitle, description, setDescription, category, setCategory, isDone, setIsDone, handleAddTask, errorMessage }) => {
     return (
         <form className="add-task" onSubmit={handleAddTask}>
             <h2 className="headline">Title</h2>
@@ -17,6 +17,7 @@ const AddTask = ({ title, setTitle, description, setDescription, category, setCa
                 <option value="Frontend">Frontend</option>
                 <option value="Backend">Backend</option>
             </select>
+            {errorMessage && <p className="error-message">{errorMessage}</p>}
             <Button type="submit">Create Task</Button>
         </form>
     );
