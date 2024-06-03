@@ -1,0 +1,21 @@
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffffff; /* Light background color */
+    padding: 20px;
+  }
+  
+  .headline {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .task {
+    border: 1px solid grey;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+  }
+  

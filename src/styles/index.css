@@ -1,0 +1,15 @@
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #F0F0F3;
+  color: #2E4057;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #3A506B;
+}
+
+button {
+  font-family: 'Lato', sans-serif;
+}

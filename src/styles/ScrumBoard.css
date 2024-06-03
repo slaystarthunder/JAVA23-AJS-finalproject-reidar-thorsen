@@ -1,0 +1,41 @@
+.scrum-board {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: #F0F0F3; /* Update background color to match the provided image */
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif; /* Adjust the font to match the screenshot */
+  }
+  
+  .add-task-wrapper {
+    flex: 0 0 30%;
+    background-color: #3A506B; /* Use a dark blue background */
+    color: #F5F5DC; /* Beige text color */
+    padding: 20px;
+    border-radius: 4px;
+  }
+  
+  .task-list-wrapper {
+    display: flex;
+    flex: 1; /* Take up the remaining space */
+    gap: 20px;
+  }
+  
+  .task-list-container {
+    flex: 1; /* Each TaskList container takes up equal space */
+    background-color: #FFFFFF; /* Use a light background color */
+    padding: 20px;
+    border-radius: 4px;
+    border: 2px solid #BDCDD6; /* Light grey border */
+  }
+  
+  .add-task-wrapper .headline,
+  .task-list-wrapper .headline {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #3A506B; /* Primary blue color for headlines */
+  }
+  
